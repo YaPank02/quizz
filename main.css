@@ -1,0 +1,157 @@
+body {
+    background: url("pics/try2.png") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Specific background for lisa-leht.html */
+body.lisa-leht {
+    background: url("pics/try3.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-family: serif, garamond;
+    font-size: 90px;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjusted Image Sizes */
+#phaseOne img#image1,
+#phaseTwo img#image2,
+#phaseThree img#image3,
+#wherePhase img#imageWhere,
+#phaseFour img#image4 {
+    display: block;
+    margin: 0 auto;
+    width: 60%; /* Increased size */
+    max-width: 700px; /* Prevents images from being too big */
+}
+
+#dragonGif {
+    width: 125%;
+    max-width: 600px;
+    height: auto;
+}
+
+#phaseTwo,
+#phaseThree,
+#wherePhase,
+#phaseFour,
+#finalPhase {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for "Where?" phase */
+#wherePhase h2 {
+    font-family: serif, garamond;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/* Styling for the final phase */
+#finalPhase {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Funny Transitions */
+.whirl-transition {
+    animation: whirl 1.5s ease-in-out forwards;
+}
+
+.carousel-transition {
+    animation: carousel 1.5s ease-in-out forwards;
+}
+
+.sparkle-transition {
+    animation: sparkle 1.5s ease-in-out forwards;
+}
+
+.strike-transition {
+    animation: strike 1.5s ease-in-out forwards;
+}
+
+.clouds-transition {
+    animation: clouds 1.5s ease-in-out forwards;
+}
+
+/* Animations */
+@keyframes whirl {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes carousel {
+    0% { transform: translateX(-2000px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes sparkle {
+    0% { transform: translateX(2000px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes strike {
+    0% { transform: translateY(-2000px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes clouds {
+    0% { transform: translateY(2000px); }
+    100% { transform: translateY(0); }
+}
+
+body {
+    text-align: center;
+}
+
+h3 {
+    font-family: serif, garamond;
+    font-size: 40px;
+    margin-top: 20px;
+}
